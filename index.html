@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gitendrajeet Ramlochund — Resume</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-2: #0e1430;
+      --card: #0e1630;
+      --ink: #e9ecf6;
+      --muted: #aeb6cf;
+      --accent: #7aa2ff;
+      --chip: #101c3b;
+      --border: #1d2948;
+      --glow: 0 0 0 1px var(--border), 0 10px 30px rgba(50,80,200,.25) inset;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background:
+        radial-gradient(1200px 500px at 110% -20%, rgba(122,162,255,0.18), transparent 60%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .container { max-width: 1000px; margin: 52px auto 80px; padding: 0 20px; }
+    header.card {
+      padding: 28px;
+      border-radius: 22px;
+      background: radial-gradient(900px 400px at -10% -40%, rgba(122,162,255,0.12), transparent 60%), var(--card);
+      border: 1px solid var(--border);
+      box-shadow: var(--glow);
+    }
+    .top {
+      display: grid; gap: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: .3px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .tagline { color: var(--muted); font-size: 16px; margin-top: 6px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--chip); border: 1px solid var(--border);
+      padding: 8px 12px; border-radius: 999px; font-size: 14px;
+    }
+    .pill a { color: var(--accent); text-decoration: none; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--chip); border: 1px solid var(--border);
+      padding: 8px 12px; border-radius: 12px; font-size: 14px;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.02) inset;
+    }
+    .badge i { font-size: 18px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 14px; }
+    @media (max-width: 860px) { .grid2 { grid-template-columns: 1fr; } }
+    section.card {
+      margin-top: 16px; padding: 22px;
+      background: var(--card); border: 1px solid var(--border); border-radius: 18px;
+      box-shadow: var(--glow);
+    }
+    h2 { margin: 0 0 14px; font-size: 20px; display: flex; align-items: center; gap: 10px; }
+    h3 { margin: 0; font-size: 16px; }
+    .sub { color: var(--muted); margin-top: 4px; font-size: 14px; }
+    ul { margin: 10px 0 0 18px; }
+    li { margin: 6px 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .chip { background: var(--chip); border: 1px solid var(--border); padding: 6px 10px; border-radius: 10px; font-size: 13px; }
+    .divider { height: 1px; background: var(--border); margin: 14px 0 6px; }
+    .left-right { display: grid; grid-template-columns: 1.4fr .8fr; gap: 16px; }
+    @media (max-width: 980px){ .left-right { grid-template-columns: 1fr; } }
+    .kicker { text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 600; font-size: 12px; }
+    .toolbar { display: flex; gap:10px; justify-content: flex-end; margin: 10px 0 -4px; }
+    .btn {
+      background: transparent; border: 1px solid var(--border); color: var(--ink);
+      padding: 8px 12px; border-radius: 10px; cursor: pointer;
+    }
+    .btn:hover { border-color: var(--accent); }
+    .link { color: var(--accent); text-decoration: none; }
+    /* Print */
+    @media print {
+      body { background: #fff; color: #111; }
+      header.card, section.card { background: #fff; border: 1px solid #ddd; box-shadow: none; }
+      .chip, .badge { border-color: #ddd; background: #f7f7f7; color: #111; }
+      .link { color: #0645ad; }
+      .btn, .toolbar { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+<div style="text-align:center;margin-top:16px;">
+  <a href="https://github.com/PixelEngineer7/IT-Resume/blob/main/Ramlochund_Gitendrajeet_Resume.pdf" target="_blank"
+     style="display:inline-block;padding:10px 20px;background:#1e40af;color:#fff;border-radius:8px;
+            text-decoration:none;font-weight:600;">
+     ⬇️ Download PDF Version
+  </a>
+</div>
+
+    <header class="card">
+      <div class="toolbar">
+        <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+      </div>
+      <div class="top">
+        <h1>G I T E N D R A J E E T &nbsp; R A M L O C H U N D</h1>
+        <div class="meta">
+          <span class="pill">📍 40 Sesame Street, Scarborough, Toronto, ON M1W 2R4</span>
+          <span class="pill">📞 <a href="tel:+14374847088">+1 437 484 7088</a></span>
+          <span class="pill">✉️ <a href="mailto:sunjeet7@gmail.com">sunjeet7@gmail.com</a></span>
+          <span class="pill">🌐 Bilingual: English & French</span>
+          <span class="pill">🎫 Status: Permanent Resident – Canada</span>
+        </div>
+        <div class="tagline">
+          Bilingual IT Support and Network Specialist experienced in enterprise systems, user support, and infrastructure management. Adept at troubleshooting hardware, software, and network issues across complex environments. Skilled in Microsoft 365, Windows Server, VoIP, and Cisco-based networks, with proven ability to ensure uptime, optimize performance, and deliver exceptional customer service. Recognized for technical accuracy, clear communication, and dedication to maintaining secure, efficient IT environments. Seeking to contribute as an IT Support Specialist within a dynamic organization focused on reliable system performance and end-user satisfaction.
+        </div>
+      </div>
+    </header>
+
+    <div class="left-right">
+      <div>
+        <section class="card">
+          <h2>🧰 Core Competencies</h2>
+          <div class="grid2">
+            <div>
+              <h3 class="kicker">Systems & Support</h3>
+              <div class="badge-row">
+                <span class="badge"><i class="devicon-windows11-original colored"></i> Windows Server</span>
+                <span class="badge"><i class="devicon-linux-plain colored"></i> Linux</span>
+                <span class="badge"><i class="devicon-microsoft-plain colored"></i> Microsoft 365</span>
+                <span class="badge"><i class="devicon-azure-plain colored"></i> Active Directory</span>
+                <span class="badge">📞 VoIP / PBX</span>
+                <span class="badge">🧵 FTTH</span>
+                <span class="badge">📺 IPTV</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="kicker">Networking</h3>
+              <div class="badge-row">
+                <span class="badge">🔗 TCP/IP</span>
+                <span class="badge">🧩 VLAN</span>
+                <span class="badge">🛜 DHCP</span>
+                <span class="badge">🔤 DNS</span>
+                <span class="badge">🧭 Routing</span>
+                <span class="badge">🧱 NAT</span>
+                <span class="badge">🌐 SD‑WAN</span>
+                <span class="badge">🕸️ LAN/WAN</span>
+                <span class="badge"><i class="devicon-cisco-plain colored"></i> Firewall Mgmt</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="kicker">Hardware</h3>
+              <div class="badge-row">
+                <span class="badge"><i class="devicon-cisco-plain colored"></i> Cisco Routers/Switches</span>
+                <span class="badge">💻 Computers</span>
+                <span class="badge">📡 Access Points</span>
+                <span class="badge">🧰 Patch Panels</span>
+                <span class="badge">🧪 Fiber Splicing/Termination</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="kicker">Tools</h3>
+              <div class="badge-row">
+                <span class="badge"><i class="devicon-wireshark-plain colored"></i> Wireshark</span>
+                <span class="badge">🛰️ NMS/OSS Systems</span>
+                <span class="badge">📈 Network Monitoring Tools</span>
+                <span class="badge">🧭 Nmap</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="kicker">Programming & Automation</h3>
+              <div class="badge-row">
+                <span class="badge"><i class="devicon-python-plain colored"></i> Python</span>
+                <span class="badge"><i class="devicon-java-plain colored"></i> Java</span>
+                <span class="badge"><i class="devicon-csharp-plain colored"></i> C#</span>
+                <span class="badge"><i class="devicon-php-plain colored"></i> PHP</span>
+                <span class="badge"><i class="devicon-mysql-plain colored"></i> SQL</span>
+                <span class="badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                <span class="badge"><i class="devicon-html5-plain colored"></i> HTML5</span>
+                <span class="badge"><i class="devicon-css3-plain colored"></i> CSS3</span>
+                <span class="badge"><i class="devicon-react-original colored"></i> React</span>
+                <span class="badge"><i class="devicon-bootstrap-plain colored"></i> Bootstrap</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="kicker">Cloud Platforms</h3>
+              <div class="badge-row">
+                <span class="badge"><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS (Foundations)</span>
+                <span class="badge"><i class="devicon-azure-plain colored"></i> Microsoft Azure (Introductory)</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="kicker">Cabling</h3>
+              <div class="badge-row">
+                <span class="badge">🟦 CAT6</span>
+                <span class="badge">🟩 CAT5</span>
+                <span class="badge">🧵 Fiber Optic (SC/LC)</span>
+                <span class="badge">🌐 Network</span>
+                <span class="badge">☎️ Telephony</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="kicker">Soft Skills</h3>
+              <div class="badge-row">
+                <span class="badge">🧠 Problem Solving</span>
+                <span class="badge">🧑‍💻 User Support</span>
+                <span class="badge">📝 Documentation</span>
+                <span class="badge">🗣️ Bilingual Communication</span>
+                <span class="badge">🤝 Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>🏢 Professional Experience</h2>
+
+          <article>
+            <h3>Telecom Coordinator | Enterprise Solutions</h3>
+            <div class="sub">Mauritius Telecom ISP (<a class="link" href="http://www.myt.mu/" target="_blank" rel="noreferrer">www.myt.mu</a>) — Port Louis, Mauritius | Apr 2016 – Sep 2025</div>
+            <ul>
+              <li>Delivered enterprise-level IT and network support for business clients across IP, data, and voice solutions.</li>
+              <li>Diagnosed and resolved hardware, software, and connectivity issues involving LAN/WAN, VLAN, and firewall systems.</li>
+              <li>Provided remote and on-site technical support to end users and field teams, ensuring minimal service disruption.</li>
+              <li>Assisted in system setup, firmware upgrades, and network configuration for routers, switches, and IP devices.</li>
+              <li>Supported users on Microsoft 365 applications, including email configuration and Teams integration.</li>
+              <li>Maintained detailed incident logs and root cause analyses in ticketing systems for transparency and SLA compliance.</li>
+              <li>Collaborated with system engineers to improve network reliability and performance monitoring.</li>
+              <li>Authored technical documentation, user guides, and troubleshooting manuals for recurring issues.</li>
+            </ul>
+            <div class="sub"><strong>Key Achievements:</strong></div>
+            <ul>
+              <li>Maintained 99.9% network uptime across major enterprise clients.</li>
+              <li>Reduced average escalation resolution time by 30% through workflow optimization.</li>
+              <li>Received the MT Heroes Award for ensuring service continuity during COVID-19.</li>
+            </ul>
+          </article>
+
+          <div class="divider"></div>
+
+          <article>
+            <h3>Technical Assistant | Networks</h3>
+            <div class="sub">Mauritius Telecom ISP (<a class="link" href="http://www.myt.mu/" target="_blank" rel="noreferrer">www.myt.mu</a>) — Port Louis, Mauritius | May 2013 – Sep 2016</div>
+            <ul>
+              <li>Assisted in the maintenance and troubleshooting of enterprise data and voice infrastructure.</li>
+              <li>Configured and tested Cisco routers, switches, and access points for client installations.</li>
+              <li>Supported data centre operations through preventive maintenance and hardware diagnostics.</li>
+              <li>Documented incidents and solutions, contributing to the internal knowledge base.</li>
+              <li>Monitored system health, applied patches, and ensured network readiness and security.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+
+      <aside>
+        <section class="card">
+          <h2>🎓 Education</h2>
+          <div>
+            <h3>Bachelor Of Science (Hons) Software Engineering</h3>
+            <div class="sub">Université des Mascareignes | Pamplemousses, Mauritius — Aug 2024</div>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <h3>Diploma in Software Engineering</h3>
+            <div class="sub">Université des Mascareignes | Pamplemousses, Mauritius — Oct 2022</div>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <h3>Brevet de Technicien (BT) in Electronics</h3>
+            <div class="sub">Lycée Polytechnique Sir Guy Forget | Flacq, Mauritius — Jul 2011</div>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <h3>School Certificate (Ordinary Level)</h3>
+            <div class="sub">Terre Rouge State Secondary School | Terre Rouge, Mauritius — Nov 2008</div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>✅ Professional Strength</h2>
+          <ul>
+            <li>Exceptional analytical and troubleshooting skills</li>
+            <li>Effective bilingual communicator (English & French)</li>
+            <li>Strong documentation and organizational abilities</li>
+            <li>Proven multitasking across high-priority incidents</li>
+            <li>Committed to service quality, compliance, and cybersecurity best practices</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>📜 Certifications</h2>
+          <ul>
+            <li><i class="devicon-cisco-plain colored"></i> Cisco Certified Network Associate (CCNA 200-301)</li>
+            <li><i class="devicon-comptia-plain colored"></i> CompTIA Security+ (SY0-601)</li>
+            <li><i class="devicon-google-plain colored"></i> Google IT Support – Coursera</li>
+            <li><i class="devicon-windows11-original colored"></i> Microsoft MCTS</li>
+            <li><i class="devicon-ecosia-original colored"></i> EC-Council Network Defence Essentials</li>
+            <li><i class="devicon-ubuntu-plain colored"></i> Cybersecurity – University of Maryland</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>🏆 Achievements & Awards</h2>
+          <ul>
+            <li>Excellent Performance Award – BSc Hons Software Engineering Cohort</li>
+            <li>Outstanding Performance Award – Diploma Software Engineering Cohort</li>
+            <li>Coursera Scholarship – Commonwealth of Learning & HEC</li>
+            <li>MT Heroes Award – Recognition for contribution during COVID-19 by Mauritius Telecom</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>🌐 Languages</h2>
+          <ul>
+            <li>English – Fluent</li>
+            <li>French – Fluent</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
